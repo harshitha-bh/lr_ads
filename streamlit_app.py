@@ -10,6 +10,7 @@ st.markdown(
 )
 
 tv = st.slider('What is price for given TV advertisement budget listing ?', 0, 300, 150)
+tv = st.number_input('Enter TV advertisement budget:', min_value=0, max_value=300, value=150)
 
 user_input = [[tv]] #, newspaper, radio]]
 #user_input = user_input.astype(float)

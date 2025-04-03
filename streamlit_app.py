@@ -16,3 +16,4 @@ user_input = [[tv]] #, newspaper, radio]]
 #user_input = user_input.astype(float)
 if st.button('Predict?'):
     st.write("The model predicts the sales based on the tv ads:", model.predict(user_input).round(2))
+ st.markdown(f"<span style='color:green'>The model predicts the sales based on the tv ads: {prediction[0]}</span>", unsafe_allow_html=True)
